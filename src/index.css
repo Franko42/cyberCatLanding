@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-cyan: #2198ff;
+  --color-cyber-purple: #995bfb;
+  --color-cyber-magenta: #d748fb;
+  --color-cyber-dark: #07090e;
+  --color-cyber-surface: #0e131f;
+  --color-cyber-card: #131b2e;
+  --color-cyber-border: rgba(33, 152, 255, 0.15);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #07090e;
+  color: #e2e8f0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2198ff;
+}
+
+/* Glow utility effects */
+.glow-cyan {
+  box-shadow: 0 0 25px -5px rgba(33, 152, 255, 0.35);
+}
+
+.glow-purple {
+  box-shadow: 0 0 25px -5px rgba(153, 91, 251, 0.35);
+}
+
+.glow-magenta {
+  box-shadow: 0 0 25px -5px rgba(215, 72, 251, 0.35);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #2198ff 0%, #995bfb 50%, #d748fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gradient {
+  border-image: linear-gradient(135deg, #2198ff, #995bfb, #d748fb) 1;
+}
